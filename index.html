@@ -6,103 +6,112 @@
   <title>Ahmad Uzair – Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body { background-color: #f8f9fa; }
-    .section-title { border-bottom: 2px solid #dee2e6; margin-bottom: 20px; padding-bottom: 5px; }
+    /* Animated Background */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(-45deg, #1e3c72, #2a5298, #1e3c72, #2a5298);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.65);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 1rem;
+      padding-bottom: 5px;
+    }
+
+    a {
+      color: #90caf9;
+    }
+    a:hover {
+      color: #ffffff;
+    }
   </style>
 </head>
 <body>
-  <div class="container py-5">
+
+  <div class="container">
     <header class="text-center mb-5">
       <h1 class="display-4">Ahmad Uzair</h1>
-      <p class="lead">Lead Systems Engineer at Sweetgreen</p>
-      <p><em>Based in Los Angeles, CA</em></p>
+      <p class="lead">IT Officer – Kementerian Pertahanan</p>
     </header>
 
-    <section class="mb-5">
+    <section class="mb-4">
       <h2 class="section-title">Contact</h2>
       <ul class="list-unstyled">
         <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ahmad-uzair-579229154/" target="_blank">linkedin.com/in/ahmad-uzair-579229154</a></li>
       </ul>
     </section>
 
-    <section class="mb-5">
-      <h2 class="section-title">Professional Experience</h2>
-      <div class="list-group">
-        <div class="list-group-item">
-          <h5 class="mb-1">Lead Systems Engineer – <em>Sweetgreen</em></h5>
-          <small class="text-muted">Apr 2019 – Present</small>
-          <p class="mb-1">Design and support retail technology across frontline store locations.</p>
-        </div>
-        <div class="list-group-item">
-          <h5 class="mb-1">Senior Systems Engineer / Systems Engineer – <em>Conduent</em></h5>
-          <small class="text-muted">Apr 2017 – Mar 2019</small>
-          <p class="mb-1">Delivered infrastructure and technical support for transportation and tolling systems.</p>
-        </div>
-        <div class="list-group-item">
-          <h5 class="mb-1">Controls Engineering Intern – <em>Intralox</em></h5>
-          <small class="text-muted">Feb 2016 – Mar 2017</small>
-          <p class="mb-1">Built control panels and integrated I/O modules.</p>
-        </div>
-        <div class="list-group-item">
-          <h5 class="mb-1">Junior Expert Engineer – <em>NESPAK</em></h5>
-          <small class="text-muted">Feb 2015 – Aug 2015</small>
-          <p class="mb-1">Participated in tower design reviews and QA during construction.</p>
-        </div>
-        <div class="list-group-item">
-          <h5 class="mb-1">Intern – <em>Siemens</em> &amp; <em>Tetra Pak</em></h5>
-          <small class="text-muted">Jun – Aug 2013</small>
-          <p class="mb-1">Focused on energy transmission and project management systems.</p>
-        </div>
+    <section class="mb-4">
+      <h2 class="section-title">Current Role</h2>
+      <div>
+        <p><strong>IT Officer</strong> – Kementerian Pertahanan</p>
+        <p>Responsible for managing and maintaining IT systems and networks within the Ministry of Defence.</p>
       </div>
     </section>
 
-    <section class="mb-5">
+    <section class="mb-4">
+      <h2 class="section-title">Previous Experience</h2>
+      <ul class="list-group">
+        <li class="list-group-item bg-transparent border-light text-white">
+          Lead Systems Engineer – Sweetgreen (Apr 2019 – Present)
+        </li>
+        <li class="list-group-item bg-transparent border-light text-white">
+          Systems Engineer – Conduent
+        </li>
+        <li class="list-group-item bg-transparent border-light text-white">
+          Controls Engineering Intern – Intralox
+        </li>
+        <li class="list-group-item bg-transparent border-light text-white">
+          Junior Expert Engineer – NESPAK
+        </li>
+        <li class="list-group-item bg-transparent border-light text-white">
+          Intern – Siemens & Tetra Pak
+        </li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
       <h2 class="section-title">Education</h2>
       <ul class="list-group">
-        <li class="list-group-item"><strong>M.Eng., Systems Engineering</strong> – University of Maryland</li>
-        <li class="list-group-item"><strong>B.S., Electrical &amp; Electronics Engineering</strong> – National University of Computer &amp; Emerging Sciences</li>
-        <li class="list-group-item"><strong>CORe (Credential of Readiness)</strong> – Harvard Business School Online</li>
+        <li class="list-group-item bg-transparent border-light text-white">
+          M.Eng., Systems Engineering – University of Maryland
+        </li>
+        <li class="list-group-item bg-transparent border-light text-white">
+          B.S., Electrical & Electronics Engineering – FAST-NUCES
+        </li>
+        <li class="list-group-item bg-transparent border-light text-white">
+          CORe – Harvard Business School Online
+        </li>
       </ul>
     </section>
 
-    <section class="mb-5">
-      <h2 class="section-title">Notable Projects</h2>
-      <div class="card">
+    <section class="mb-4">
+      <h2 class="section-title">Projects</h2>
+      <div class="card bg-dark text-white">
         <div class="card-body">
           <h5 class="card-title">Complaint Management Portal</h5>
-          <p class="card-text">
-            Built with Vue.js, Node.js, Express &amp; MongoDB. ~70% frontend, ~60% backend complete.
-          </p>
-          <a href="https://github.com/ahmad-uzair/complaint-management-portal" target="_blank" class="btn btn-primary">View on GitHub</a>
+          <p class="card-text">Built with Vue.js, Node.js, Express & MongoDB. ~70% frontend, ~60% backend complete.</p>
+          <a href="https://github.com/ahmad-uzair/complaint-management-portal" target="_blank" class="btn btn-outline-light">View on GitHub</a>
         </div>
       </div>
-    </section>
-
-    <section class="mb-5">
-      <h2 class="section-title">Skills & Technologies</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Systems Engineering &amp; Infrastructure Design</li>
-            <li class="list-group-item">Retail Technology Solutions</li>
-            <li class="list-group-item">Control Systems &amp; Automation</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Web Development: Vue.js, Node.js, Express, MongoDB</li>
-            <li class="list-group-item">Project Management &amp; Quality Assurance</li>
-            <li class="list-group-item">Business Strategy &amp; Technical Support</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-5">
-      <h2 class="section-title">Additional Experience</h2>
-      <ul class="list-group">
-        <li class="list-group-item">Music blogger at KoolMuzone.com (Jan 2012 – Jan 2013)</li>
-      </ul>
     </section>
   </div>
 
